@@ -36,6 +36,12 @@ jobs:
       - name: Run unit and widget tests
         run: flutter test
 
+      - name: Install Android NDK
+        run: |
+          SDKMANAGER=$(which sdkmanager || echo "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager")
+          yes | "$SDKMANAGER" --licenses > /dev/null 2>&1 || true
+          "$SDKMANAGER" --install "ndk;28.2.13676358"
+
       - name: Build release APK
         run: flutter build apk --release
 
