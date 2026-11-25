@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:ssw3307/main.dart';
+import 'package:ssw3401/main.dart';
 
 void main() {
   testWidgets('CameraPage renders initial state', (WidgetTester tester) async {

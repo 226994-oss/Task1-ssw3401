@@ -5,9 +5,8 @@ plugins {
 }
 
 android {
-    namespace = "com.Shengjiawei.ssw3307"
+    namespace = "com.Task1.ssw3401"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
